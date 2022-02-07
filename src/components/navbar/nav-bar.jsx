@@ -3,44 +3,72 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="/"><h1>Miler</h1></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarScroll">
-                        <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Link</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="/" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Link
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a className="dropdown-item" href="/">Action</a></li>
-                                    <li><a className="dropdown-item" href="/">Another action</a></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="/">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li className="nav-item">
-                                <a href='/' className="nav-link disabled">Link</a>
-                            </li>
-                        </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
+        <nav className="classy-navbar" id="essenceNav">
+
+            <Link className="nav-brand" to="/">MILER</Link>
+
+            <div className="classy-navbar-toggler">
+                <span className="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <div className="classy-menu">
+
+                <div className="classycloseIcon">
+                    <div className="cross-wrap"><span className="top"></span><span className="bottom"></span></div>
                 </div>
-            </nav>
-        </>
+
+                <div className="classynav">
+                    <ul>
+                        <li><Link to="/">Shop</Link>
+                            <div className="megamenu">
+                                <ul className="single-mega cn-col-4">
+                                    <li className="title">Women's Collection</li>
+                                    <li><Link to="/">Dresses</Link></li>
+                                    <li><Link to="/">Blouses &amp; Shirts</Link></li>
+                                    <li><Link to="/">T-shirts</Link></li>
+                                    <li><Link to="/">Rompers</Link></li>
+                                    <li><Link to="/">Bras &amp; Panties</Link></li>
+                                </ul>
+                                <ul className="single-mega cn-col-4">
+                                    <li className="title">Men's Collection</li>
+                                    <li><Link to="/">T-Shirts</Link></li>
+                                    <li><Link to="/">Polo</Link></li>
+                                    <li><Link to="/">Shirts</Link></li>
+                                    <li><Link to="/">Jackets</Link></li>
+                                    <li><Link to="/">Trench</Link></li>
+                                </ul>
+                                <ul className="single-mega cn-col-4">
+                                    <li className="title">Kid's Collection</li>
+                                    <li><Link to="/">Dresses</Link></li>
+                                    <li><Link to="/">Shirts</Link></li>
+                                    <li><Link to="/">T-shirts</Link></li>
+                                    <li><Link to="/">Jackets</Link></li>
+                                    <li><Link to="/">Trench</Link></li>
+                                </ul>
+                                <div className="single-mega cn-col-4">
+                                    <img src="assets/img/bg-img/bg-6.jpg" alt="" />
+                                </div>
+                            </div>
+                        </li>
+                        <li><Link to="/">Category</Link>
+                            <ul className="dropdown">
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/">Shop</Link></li>
+                                <li><Link to="/">Product Details</Link></li>
+                                <li><Link to="/">Checkout</Link></li>
+                                <li><Link to="/">Single Blog</Link></li>
+                                <li><Link to="/">Regular Page</Link></li>
+                                <li><Link to="/">Contact</Link></li>
+                            </ul>
+                        </li>
+                        <li><Link to="/">About</Link></li>
+                        <li><Link to="/">Contact</Link></li>
+                        {/* <li><Link to="/">Sew Your Tee</Link></li> */}
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     )
 };
 

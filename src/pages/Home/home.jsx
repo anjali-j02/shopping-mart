@@ -1,79 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import NavBar from '../../components/navbar/nav-bar'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div id="app">
 
       <header className="header_area">
-        <div className="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
-
-          <nav className="classy-navbar" id="essenceNav">
-
-            <Link className="nav-brand" to="/">MILER</Link>
-
-            <div className="classy-navbar-toggler">
-              <span className="navbarToggler"><span></span><span></span><span></span></span>
-            </div>
-
-            <div className="classy-menu">
-
-              <div className="classycloseIcon">
-                <div className="cross-wrap"><span className="top"></span><span className="bottom"></span></div>
-              </div>
-
-              <div className="classynav">
-                <ul>
-                  <li><Link to="/">Shop</Link>
-                    <div className="megamenu">
-                      <ul className="single-mega cn-col-4">
-                        <li className="title">Women's Collection</li>
-                        <li><Link to="/">Dresses</Link></li>
-                        <li><Link to="/">Blouses &amp; Shirts</Link></li>
-                        <li><Link to="/">T-shirts</Link></li>
-                        <li><Link to="/">Rompers</Link></li>
-                        <li><Link to="/">Bras &amp; Panties</Link></li>
-                      </ul>
-                      <ul className="single-mega cn-col-4">
-                        <li className="title">Men's Collection</li>
-                        <li><Link to="/">T-Shirts</Link></li>
-                        <li><Link to="/">Polo</Link></li>
-                        <li><Link to="/">Shirts</Link></li>
-                        <li><Link to="/">Jackets</Link></li>
-                        <li><Link to="/">Trench</Link></li>
-                      </ul>
-                      <ul className="single-mega cn-col-4">
-                        <li className="title">Kid's Collection</li>
-                        <li><Link to="/">Dresses</Link></li>
-                        <li><Link to="/">Shirts</Link></li>
-                        <li><Link to="/">T-shirts</Link></li>
-                        <li><Link to="/">Jackets</Link></li>
-                        <li><Link to="/">Trench</Link></li>
-                      </ul>
-                      <div className="single-mega cn-col-4">
-                        <img src="assets/img/bg-img/bg-6.jpg" alt="" />
-                      </div>
-                    </div>
-                  </li>
-                  <li><Link to="/">Category</Link>
-                    <ul className="dropdown">
-                      <li><Link to="/">Home</Link></li>
-                      <li><Link to="/">Shop</Link></li>
-                      <li><Link to="/">Product Details</Link></li>
-                      <li><Link to="/">Checkout</Link></li>
-                      <li><Link to="/">Single Blog</Link></li>
-                      <li><Link to="/">Regular Page</Link></li>
-                      <li><Link to="/">Contact</Link></li>
-                    </ul>
-                  </li>
-                  <li><Link to="/">About</Link></li>
-                  <li><Link to="/">Contact</Link></li>
-                </ul>
-              </div>
-
-            </div>
-          </nav>
-
+        <div className="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">'
+        <NavBar />
 
           <div className="header-meta d-flex clearfix justify-content-end">
 
@@ -324,7 +259,7 @@ const Home = () => {
                     <div className="favorite favorite_left"></div>
                     <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="##">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
+                      <h6 className="product_name"><Link to="/">Fujifilm X100T 16 MP Digital Camera (Silver)</Link></h6>
                       <div className="product_price">$520.00<span>$590.00</span></div>
                     </div>
                   </div>
@@ -408,6 +343,188 @@ const Home = () => {
                 </div>
 
                 <div className="red_button deal_ofthe_week_button"><Link to='/'>shop now</Link></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="best_sellers">
+        <div className="container">
+          <div className="row">
+            <div className="col text-center">
+              <div className="section_title new_arrivals_title">
+                <h2>Best Sellers</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <div className="product_slider_container">
+                <div className="owl-carousel owl-theme product_slider">
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item">
+                      <div className="product discount">
+                        <div className="product_image">
+                          <img src="assets/images/product_1.png" alt="" />
+                        </div>
+                        <div className="favorite favorite_left"></div>
+                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Fujifilm X100T 16 MP Digital Camera (Silver)</Link></h6>
+                          <div className="product_price">$520.00<span>$590.00</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item women">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_2.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</Link></h6>
+                          <div className="product_price">$610.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item women">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_3.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Blue Yeti USB Microphone Blackout Edition</Link></h6>
+                          <div className="product_price">$120.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item accessories">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_4.png" alt="" />
+                        </div>
+                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+                        <div className="favorite favorite_left"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</Link></h6>
+                          <div className="product_price">$410.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item women men">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_5.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Pryma Headphones, Rose Gold & Grey</Link></h6>
+                          <div className="product_price">$180.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item accessories">
+                      <div className="product discount">
+                        <div className="product_image">
+                          <img src="assets/images/product_6.png" alt="" />
+                        </div>
+                        <div className="favorite favorite_left"></div>
+                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Fujifilm X100T 16 MP Digital Camera (Silver)</Link></h6>
+                          <div className="product_price">$520.00<span>$590.00</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item women">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_7.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</Link></h6>
+                          <div className="product_price">$610.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item accessories">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_8.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Blue Yeti USB Microphone Blackout Edition</Link></h6>
+                          <div className="product_price">$120.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item men">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_9.png" alt="" />
+                        </div>
+                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+                        <div className="favorite favorite_left"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</Link></h6>
+                          <div className="product_price">$410.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="owl-item product_slider_item">
+                    <div className="product-item men">
+                      <div className="product">
+                        <div className="product_image">
+                          <img src="assets/images/product_10.png" alt="" />
+                        </div>
+                        <div className="favorite"></div>
+                        <div className="product_info">
+                          <h6 className="product_name"><Link to="/">Pryma Headphones, Rose Gold & Grey</Link></h6>
+                          <div className="product_price">$180.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                  <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div className="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+                  <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -607,6 +724,7 @@ const Home = () => {
                     <li><Link to="/">Cart</Link></li>
                     <li><Link to="/">About</Link></li>
                     <li><Link to="/">Contact</Link></li>
+                    <li><Link to="/">Sew Your Tee</Link></li>
                   </ul>
                 </div>
 
