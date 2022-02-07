@@ -3,158 +3,192 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div classNameName="MainDiv">
+    <div id="app">
 
-      <header className="header trans_300">
+      <header className="header_area">
+        <div className="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
 
-        <div className="top_nav">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="top_nav_left">free shipping on all india orders over Rs.500</div>
+          <nav className="classy-navbar" id="essenceNav">
+
+            <Link className="nav-brand" to="/">MILER</Link>
+
+            <div className="classy-navbar-toggler">
+              <span className="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <div className="classy-menu">
+
+              <div className="classycloseIcon">
+                <div className="cross-wrap"><span className="top"></span><span className="bottom"></span></div>
               </div>
-              <div className="col-md-6 text-right">
-                <div className="top_nav_right">
-                  <ul className="top_nav_menu">
 
-                    <li className="currency">
-                      <a href="/">
-                        inr
-                        <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul className="currency_selection">
-                        <li><a href="/">usa</a></li>
-                        <li><a href="/">cad</a></li>
-                        <li><a href="/">aud</a></li>
-                        <li><a href="/">eur</a></li>
-                        <li><a href="/">gbp</a></li>
+              <div className="classynav">
+                <ul>
+                  <li><Link to="/">Shop</Link>
+                    <div className="megamenu">
+                      <ul className="single-mega cn-col-4">
+                        <li className="title">Women's Collection</li>
+                        <li><Link to="/">Dresses</Link></li>
+                        <li><Link to="/">Blouses &amp; Shirts</Link></li>
+                        <li><Link to="/">T-shirts</Link></li>
+                        <li><Link to="/">Rompers</Link></li>
+                        <li><Link to="/">Bras &amp; Panties</Link></li>
                       </ul>
-                    </li>
-                    <li className="language">
-                      <a href="/">
-                        English
-                        <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul className="language_selection">
-                        <li><a href="/">Hindi</a></li>
-                        <li><a href="/">French</a></li>
-                        <li><a href="/">Italian</a></li>
-                        <li><a href="/">German</a></li>
-                        <li><a href="/">Spanish</a></li>
+                      <ul className="single-mega cn-col-4">
+                        <li className="title">Men's Collection</li>
+                        <li><Link to="/">T-Shirts</Link></li>
+                        <li><Link to="/">Polo</Link></li>
+                        <li><Link to="/">Shirts</Link></li>
+                        <li><Link to="/">Jackets</Link></li>
+                        <li><Link to="/">Trench</Link></li>
                       </ul>
-                    </li>
-                    <li className="account">
-                      <a href="/">
-                        My Account
-                        <i className="fa fa-angle-down"></i>
-                      </a>
-                      <ul className="account_selection">
-                        <li><a href="/"><i className="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                        <li><a href="/"><i className="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                      <ul className="single-mega cn-col-4">
+                        <li className="title">Kid's Collection</li>
+                        <li><Link to="/">Dresses</Link></li>
+                        <li><Link to="/">Shirts</Link></li>
+                        <li><Link to="/">T-shirts</Link></li>
+                        <li><Link to="/">Jackets</Link></li>
+                        <li><Link to="/">Trench</Link></li>
                       </ul>
-                    </li>
-                  </ul>
-                </div>
+                      <div className="single-mega cn-col-4">
+                        <img src="assets/img/bg-img/bg-6.jpg" alt="" />
+                      </div>
+                    </div>
+                  </li>
+                  <li><Link to="/">Category</Link>
+                    <ul className="dropdown">
+                      <li><Link to="/">Home</Link></li>
+                      <li><Link to="/">Shop</Link></li>
+                      <li><Link to="/">Product Details</Link></li>
+                      <li><Link to="/">Checkout</Link></li>
+                      <li><Link to="/">Single Blog</Link></li>
+                      <li><Link to="/">Regular Page</Link></li>
+                      <li><Link to="/">Contact</Link></li>
+                    </ul>
+                  </li>
+                  <li><Link to="/">About</Link></li>
+                  <li><Link to="/">Contact</Link></li>
+                </ul>
               </div>
+
+            </div>
+          </nav>
+
+
+          <div className="header-meta d-flex clearfix justify-content-end">
+
+            <div className="search-area">
+              <form action="#" method="post">
+                <input type="search" name="search" id="headerSearch" placeholder="Type for search" />
+                <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <div className="favourite-area">
+              <Link to="/"><img src="assets/img/core-img/heart.svg" alt="" /></Link>
+            </div>
+
+            <div className="user-login-info">
+              <Link to="/"><img src="assets/img/core-img/user.svg" alt="" /></Link>
+            </div>
+
+            <div className="cart-area">
+              <Link to="/" id="essenceCartBtn"><img src="assets/img/core-img/bag.svg" alt="" /> <span>3</span></Link>
             </div>
           </div>
-        </div>
 
-        <div className="main_nav_container">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 text-right">
-                <div className="logo_container">
-                  <Link to="/"><h1>M<span>I</span><span>L</span><span>E</span><span>R</span></h1></Link>
-                </div>
-                <nav className="navbar">
-                  <ul className="navbar_menu">
-                    <li><a href="/">home</a></li>
-                    <li><a href="/">shop</a></li>
-                    <li><a href="/">promotion</a></li>
-                    <li><a href="/">category</a></li>
-                    <li><a href="/">contact</a></li>
-                  </ul>
-                  <ul className="navbar_user">
-                    <li><a href="/"><i className="fa fa-search" aria-hidden="true"></i></a></li>
-                    <li><a href="/"><i className="fa fa-user" aria-hidden="true"></i></a></li>
-                    <li className="checkout">
-                      <a href="/">
-                        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span id="checkout_items" className="checkout_items">2</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="hamburger_container">
-                    <i className="fa fa-bars" aria-hidden="true"></i>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
         </div>
       </header>
-      <div className="fs_menu_overlay"></div>
-      <div className="hamburger_menu">
-        <div className="hamburger_close"><i className="fa fa-times" aria-hidden="true"></i></div>
-        <div className="hamburger_menu_content text-right">
-          <ul className="menu_top_nav">
-            <li className="menu_item has-children">
-              <a href="/">
-                usd
-                <i className="fa fa-angle-down"></i>
-              </a>
-              <ul className="menu_selection">
-                <li><a href="/">cad</a></li>
-                <li><a href="/">aud</a></li>
-                <li><a href="/">eur</a></li>
-                <li><a href="/">gbp</a></li>
-              </ul>
-            </li>
-            <li className="menu_item has-children">
-              <a href="/">
-                English
-                <i className="fa fa-angle-down"></i>
-              </a>
-              <ul className="menu_selection">
-                <li><a href="/">French</a></li>
-                <li><a href="/">Italian</a></li>
-                <li><a href="/">German</a></li>
-                <li><a href="/">Spanish</a></li>
-              </ul>
-            </li>
-            <li className="menu_item has-children">
-              <a href="/">
-                My Account
-                <i className="fa fa-angle-down"></i>
-              </a>
-              <ul className="menu_selection">
-                <li><a href="/"><i className="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                <li><a href="/"><i className="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
-              </ul>
-            </li>
-            <li className="menu_item"><a href="/">home</a></li>
-            <li className="menu_item"><a href="/">shop</a></li>
-            <li className="menu_item"><a href="/">promotion</a></li>
-            <li className="menu_item"><a href="/">category</a></li>
-            <li className="menu_item"><a href="/">contact</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div className="main_slider" style={{ backgroundImage: "url(assets/images/slider_1.jpg)" }}>
-        <div className="container fill_height">
-          <div className="row align-items-center fill_height">
-            <div className="col">
-              <div className="main_slider_content">
-                <h6>Spring / Summer Collection 2021</h6>
-                <h1>Get up to 30% Off New Arrivals</h1>
-                <div className="red_button shop_now_button"><a href="/">shop now</a></div>
-              </div>
+      <div className="cart-bg-overlay"></div>
+
+      <div className="right-side-cart-area">
+
+
+        <div className="cart-button">
+          <Link to="/" id="rightSideCart"><img src="assets/img/core-img/bag.svg" alt="" /> <span>3</span></Link>
+        </div>
+
+        <div className="cart-content d-flex">
+
+          <div className="cart-list">
+
+            <div className="single-cart-item">
+              <Link to="/" className="product-image">
+                <img src="assets/img/product-img/product-1.jpg" className="cart-thumb" alt="" />
+
+                <div className="cart-item-desc">
+                  <span className="product-remove"><i className="fa fa-close" aria-hidden="true"></i></span>
+                  <span className="badge">Mango</span>
+                  <h6>Button Through Strap Mini Dress</h6>
+                  <p className="size">Size: S</p>
+                  <p className="color">Color: Red</p>
+                  <p className="price">₹999.00</p>
+                </div>
+              </Link>
+            </div>
+
+
+            <div className="single-cart-item">
+              <Link to="/" className="product-image">
+                <img src="assets/img/product-img/product-2.jpg" className="cart-thumb" alt="" />
+
+                <div className="cart-item-desc">
+                  <span className="product-remove"><i className="fa fa-close" aria-hidden="true"></i></span>
+                  <span className="badge">Mango</span>
+                  <h6>Button Through Strap Mini Dress</h6>
+                  <p className="size">Size: S</p>
+                  <p className="color">Color: Red</p>
+                  <p className="price">₹499.00</p>
+                </div>
+              </Link>
+            </div>
+
+            <div className="single-cart-item">
+              <Link to="/" className="product-image">
+                <img src="assets/img/product-img/product-3.jpg" className="cart-thumb" alt="" />
+
+                <div className="cart-item-desc">
+                  <span className="product-remove"><i className="fa fa-close" aria-hidden="true"></i></span>
+                  <span className="badge">Mango</span>
+                  <h6>Button Through Strap Mini Dress</h6>
+                  <p className="size">Size: S</p>
+                  <p className="color">Color: Red</p>
+                  <p className="price">₹1,449.00</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="cart-amount-summary">
+
+            <h2>Summary</h2>
+            <ul className="summary-table">
+              <li><span>subtotal:</span> <span>₹2,199.00</span></li>
+              <li><span>delivery:</span> <span>Free</span></li>
+              <li><span>discount:</span> <span>-15%</span></li>
+              <li><span>total:</span> <span>₹1,299.00</span></li>
+            </ul>
+            <div className="checkout-btn mt-100">
+              <Link to="/" className="btn essence-btn">check out</Link>
             </div>
           </div>
         </div>
       </div>
+
+      <section className="welcome_area bg-img background-overlay" style={{ backgroundImage: "url(assets/img/bg-img/bg-1.jpg)" }}>
+        <div className="container h-100">
+          <div className="row h-100 align-items-center">
+            <div className="col-12">
+              <div className="hero-content">
+                <h6>asoss</h6>
+                <h2>New Collection</h2>
+                <Link to="/" className="btn essence-btn">view collection</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="banner">
         <div className="container">
@@ -162,21 +196,21 @@ const Home = () => {
             <div className="col-md-4">
               <div className="banner_item align-items-center" style={{ backgroundImage: "url(assets/images/banner_1.jpg)" }}>
                 <div className="banner_category">
-                  <a href="/">women's</a>
+                  <Link to='/'>women's</Link>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="banner_item align-items-center" style={{ backgroundImage: "url(assets/images/banner_2.jpg)" }}>
                 <div className="banner_category">
-                  <a href="/">accessories's</a>
+                  <Link to='/'>accessories's</Link>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="banner_item align-items-center" style={{ backgroundImage: "url(assets/images/banner_3.jpg)" }}>
                 <div className="banner_category">
-                  <a href="/">men's</a>
+                  <Link to='/'>men's</Link>
                 </div>
               </div>
             </div>
@@ -217,11 +251,11 @@ const Home = () => {
                     <div className="favorite favorite_left"></div>
                     <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
+                      <h6 className="product_name"><Link to='/'>Fujifilm X100T 16 MP Digital Camera (Silver)</Link></h6>
                       <div className="product_price">$520.00<span>$590.00</span></div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item women">
@@ -232,11 +266,11 @@ const Home = () => {
                     <div className="favorite"></div>
                     <div className="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
+                      <h6 className="product_name"><Link to='/'>Samsung CF591 Series Curved 27-Inch FHD Monitor</Link></h6>
                       <div className="product_price">$610.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item women">
@@ -246,11 +280,11 @@ const Home = () => {
                     </div>
                     <div className="favorite"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Blue Yeti USB Microphone Blackout Edition</a></h6>
+                      <h6 className="product_name"><Link to='/'>Blue Yeti USB Microphone Blackout Edition</Link></h6>
                       <div className="product_price">$120.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item accessories">
@@ -261,11 +295,11 @@ const Home = () => {
                     <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
                     <div className="favorite favorite_left"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
+                      <h6 className="product_name"><Link to='/'>DYMO LabelWriter 450 Turbo Thermal Label Printer</Link></h6>
                       <div className="product_price">$410.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item women men">
@@ -275,11 +309,11 @@ const Home = () => {
                     </div>
                     <div className="favorite"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Pryma Headphones, Rose Gold & Grey</a></h6>
+                      <h6 className="product_name"><Link to='/'>Pryma Headphones, Rose Gold & Grey</Link></h6>
                       <div className="product_price">$180.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item accessories">
@@ -294,7 +328,7 @@ const Home = () => {
                       <div className="product_price">$520.00<span>$590.00</span></div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item women">
@@ -304,11 +338,11 @@ const Home = () => {
                     </div>
                     <div className="favorite"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
+                      <h6 className="product_name"><Link to='/'>Samsung CF591 Series Curved 27-Inch FHD Monitor</Link></h6>
                       <div className="product_price">$610.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item accessories">
@@ -318,11 +352,11 @@ const Home = () => {
                     </div>
                     <div className="favorite"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Blue Yeti USB Microphone Blackout Edition</a></h6>
+                      <h6 className="product_name"><Link to='/'>Blue Yeti USB Microphone Blackout Edition</Link></h6>
                       <div className="product_price">$120.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item men">
@@ -333,11 +367,11 @@ const Home = () => {
                     <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
                     <div className="favorite favorite_left"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
+                      <h6 className="product_name"><Link to='/'>DYMO LabelWriter 450 Turbo Thermal Label Printer</Link></h6>
                       <div className="product_price">$410.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
 
                 <div className="product-item men">
@@ -347,11 +381,11 @@ const Home = () => {
                     </div>
                     <div className="favorite"></div>
                     <div className="product_info">
-                      <h6 className="product_name"><a href="/">Pryma Headphones, Rose Gold & Grey</a></h6>
+                      <h6 className="product_name"><Link to='/'>Pryma Headphones, Rose Gold & Grey</Link></h6>
                       <div className="product_price">$180.00</div>
                     </div>
                   </div>
-                  <div className="red_button add_to_cart_button"><a href="/">add to cart</a></div>
+                  <div className="red_button add_to_cart_button"><Link to='/'>add to cart</Link></div>
                 </div>
               </div>
             </div>
@@ -367,345 +401,252 @@ const Home = () => {
                 <img src="assets/images/deal_ofthe_week.png" alt="" />
               </div>
             </div>
-            <div className="col-lg-6 text-right deal_ofthe_week_col">
+            <div className="col-lg-4 text-right deal_ofthe_week_col">
               <div className="deal_ofthe_week_content d-flex flex-column align-items-center float-right">
                 <div className="section_title">
                   <h2>Deal Of The Week</h2>
                 </div>
 
-                <div className="red_button deal_ofthe_week_button"><a href="/">shop now</a></div>
+                <div className="red_button deal_ofthe_week_button"><Link to='/'>shop now</Link></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="best_sellers">
+      <section className="new_arrivals_area section-padding-80 clearfix">
         <div className="container">
           <div className="row">
-            <div className="col text-center">
-              <div className="section_title new_arrivals_title">
-                <h2>Best Sellers</h2>
+            <div className="col-12">
+              <div className="section-heading text-center">
+                <h2>Popular Products</h2>
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="container">
           <div className="row">
-            <div className="col">
-              <div className="product_slider_container">
-                <div className="owl-carousel owl-theme product_slider">
+            <div className="col-12">
+              <div className="popular-products-slides owl-carousel">
 
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item">
-                      <div className="product discount">
-                        <div className="product_image">
-                          <img src="assets/images/product_1.png" alt="" />
-                        </div>
-                        <div className="favorite favorite_left"></div>
-                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
-                          <div className="product_price">$520.00<span>$590.00</span></div>
-                        </div>
-                      </div>
+                <div className="single-product-wrapper">
+
+                  <div className="product-img">
+                    <img src="assets/img/product-img/product-1.jpg" alt="" />
+
+                    <img className="hover-img" src="assets/img/product-img/product-2.jpg" alt="" />
+
+                    <div className="product-favourite">
+                      <Link to="/" className="favme fa fa-heart"></Link>
                     </div>
                   </div>
 
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item women">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_2.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
-                          <div className="product_price">$610.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="product-description">
+                    <span>topshop</span>
+                    <Link to="/">
+                      <h6>Knot Front Mini Dress</h6>
+                    </Link>
+                    <p className="product-price">₹99.00</p>
 
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item women">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_3.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Blue Yeti USB Microphone Blackout Edition</a></h6>
-                          <div className="product_price">$120.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item accessories">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_4.png" alt="" />
-                        </div>
-                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
-                        <div className="favorite favorite_left"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
-                          <div className="product_price">$410.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <div className="hover-content">
 
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item women men">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_5.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Pryma Headphones, Rose Gold & Grey</a></h6>
-                          <div className="product_price">$180.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item accessories">
-                      <div className="product discount">
-                        <div className="product_image">
-                          <img src="assets/images/product_6.png" alt="" />
-                        </div>
-                        <div className="favorite favorite_left"></div>
-                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Fujifilm X100T 16 MP Digital Camera (Silver)</a></h6>
-                          <div className="product_price">$520.00<span>$590.00</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item women">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_7.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h6>
-                          <div className="product_price">$610.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item accessories">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_8.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Blue Yeti USB Microphone Blackout Edition</a></h6>
-                          <div className="product_price">$120.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item men">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_9.png" alt="" />
-                        </div>
-                        <div className="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
-                        <div className="favorite favorite_left"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h6>
-                          <div className="product_price">$410.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="owl-item product_slider_item">
-                    <div className="product-item men">
-                      <div className="product">
-                        <div className="product_image">
-                          <img src="assets/images/product_10.png" alt="" />
-                        </div>
-                        <div className="favorite"></div>
-                        <div className="product_info">
-                          <h6 className="product_name"><a href="/">Pryma Headphones, Rose Gold & Grey</a></h6>
-                          <div className="product_price">$180.00</div>
-                        </div>
+                      <div className="add-to-cart-btn">
+                        <Link to="/" className="btn essence-btn">Add to Cart</Link>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
-                  <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                <div className="single-product-wrapper">
+
+                  <div className="product-img">
+                    <img src="assets/img/product-img/product-2.jpg" alt="" />
+
+                    <img className="hover-img" src="assets/img/product-img/product-3.jpg" alt="" />
+
+                    <div className="product-favourite">
+                      <Link to="/" className="favme fa fa-heart"></Link>
+                    </div>
+                  </div>
+
+                  <div className="product-description">
+                    <span>topshop</span>
+                    <Link to="/">
+                      <h6>Poplin Displaced Wrap Dress</h6>
+                    </Link>
+                    <p className="product-price">₹799.00</p>
+
+
+                    <div className="hover-content">
+
+                      <div className="add-to-cart-btn">
+                        <Link to="/" className="btn essence-btn">Add to Cart</Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
-                  <i className="fa fa-chevron-right" aria-hidden="true"></i>
+
+
+                <div className="single-product-wrapper">
+
+                  <div className="product-img">
+                    <img src="assets/img/product-img/product-3.jpg" alt="" />
+
+                    <img className="hover-img" src="assets/img/product-img/product-4.jpg" alt="" />
+
+
+                    <div className="product-badge offer-badge">
+                      <span>-30%</span>
+                    </div>
+
+
+                    <div className="product-favourite">
+                      <Link to="/" className="favme fa fa-heart"></Link>
+                    </div>
+                  </div>
+
+                  <div className="product-description">
+                    <span>mango</span>
+                    <Link to="/">
+                      <h6>PETITE Crepe Wrap Mini Dress</h6>
+                    </Link>
+                    <p className="product-price"><span className="old-price">₹699.00</span> ₹599.00</p>
+
+
+                    <div className="hover-content">
+
+                      <div className="add-to-cart-btn">
+                        <Link to="/" className="btn essence-btn">Add to Cart</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="single-product-wrapper">
+
+                  <div className="product-img">
+                    <img src="assets/img/product-img/product-4.jpg" alt="" />
+
+                    <img className="hover-img" src="assets/img/product-img/product-5.jpg" alt="" />
+
+
+                    <div className="product-badge new-badge">
+                      <span>New</span>
+                    </div>
+
+
+                    <div className="product-favourite">
+                      <Link to="/" className="favme fa fa-heart"></Link>
+                    </div>
+                  </div>
+
+                  <div className="product-description">
+                    <span>mango</span>
+                    <Link to="/">
+                      <h6>PETITE Belted Jumper Dress</h6>
+                    </Link>
+                    <p className="product-price">₹1499.00</p>
+
+
+                    <div className="hover-content">
+
+                      <div className="add-to-cart-btn">
+                        <Link to="/" className="btn essence-btn">Add to Cart</Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="benefit">
-        <div className="container">
-          <div className="row benefit_row">
-            <div className="col-lg-3 benefit_col">
-              <div className="benefit_item d-flex flex-row align-items-center">
-                <div className="benefit_icon"><i className="fa fa-truck" aria-hidden="true"></i></div>
-                <div className="benefit_content">
-                  <h6>free shipping</h6>
-                  <p>Suffered Alteration in Some Form</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 benefit_col">
-              <div className="benefit_item d-flex flex-row align-items-center">
-                <div className="benefit_icon"><i className="fa fa-money" aria-hidden="true"></i></div>
-                <div className="benefit_content">
-                  <h6>cach on delivery</h6>
-                  <p>The Internet Tend To Repeat</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 benefit_col">
-              <div className="benefit_item d-flex flex-row align-items-center">
-                <div className="benefit_icon"><i className="fa fa-undo" aria-hidden="true"></i></div>
-                <div className="benefit_content">
-                  <h6>45 days return</h6>
-                  <p>Making it Look Like Readable</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 benefit_col">
-              <div className="benefit_item d-flex flex-row align-items-center">
-                <div className="benefit_icon"><i className="fa fa-clock-o" aria-hidden="true"></i></div>
-                <div className="benefit_content">
-                  <h6>opening all week</h6>
-                  <p>8AM - 09PM</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="brands-area d-flex align-items-center justify-content-between">
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand1.png" alt="" />
+        </div>
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand2.png" alt="" />
+        </div>
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand3.png" alt="" />
+        </div>
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand4.png" alt="" />
+        </div>
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand5.png" alt="" />
+        </div>
+
+        <div className="single-brands-logo">
+          <img src="assets/img/core-img/brand6.png" alt="" />
         </div>
       </div>
 
-      <div className="blogs">
+      <footer className="footer_area clearfix">
         <div className="container">
           <div className="row">
-            <div className="col text-center">
-              <div className="section_title">
-                <h2>Latest Blogs</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row blogs_container">
-            <div className="col-lg-4 blog_item_col">
-              <div className="blog_item">
-                <div className="blog_background" style={{ backgroundImage: "url(assets/images/blog_1.jpg)" }}></div>
-                <div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                  <h4 className="blog_title">Here are the trends I see coming this fall</h4>
-                  <span className="blog_meta">by admin | dec 01, 2021</span>
-                  <a className="blog_more" href="/">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 blog_item_col">
-              <div className="blog_item">
-                <div className="blog_background" style={{ backgroundImage: "url(assets/images/blog_2.jpg)" }}></div>
-                <div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                  <h4 className="blog_title">Here are the trends I see coming this fall</h4>
-                  <span className="blog_meta">by admin | dec 01, 2021</span>
-                  <a className="blog_more" href="/">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 blog_item_col">
-              <div className="blog_item">
-                <div className="blog_background" style={{ backgroundImage: "url(assets/images/blog_3.jpg)" }}></div>
-                <div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-                  <h4 className="blog_title">Here are the trends I see coming this fall</h4>
-                  <span className="blog_meta">by admin | dec 01, 2021</span>
-                  <a className="blog_more" href="/">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="newsletter">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
-                <h4>Newsletter</h4>
-                <p>Subscribe to our newsletter and get 20% off your first purchase</p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <form action="post">
-                <div className="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
-                  <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required." />
-                  <button id="newsletter_submit" type="submit" className="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div className="col-12 col-md-6">
+              <div className="single_widget_area d-flex mb-30">
 
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
-                <ul className="footer_nav">
-                  <li><a href="/">Shop</a></li>
-                  <li><a href="/">Cart</a></li>
-                  <li><a href="/">About us</a></li>
-                  <li><a href="/">Contact us</a></li>
-                </ul>
+                <div className="footer_menu">
+                  <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Shop</Link></li>
+                    <li><Link to="/">Category</Link></li>
+                    <li><Link to="/">Cart</Link></li>
+                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/">Contact</Link></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
-                <ul>
-                  <li><a href="/"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="/"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="/"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li><a href="/"><i className="fa fa-skype" aria-hidden="true"></i></a></li>
-                  <li><a href="/"><i className="fa fa-pinterest" aria-hidden="true"></i></a></li>
+
+            <div className="col-12 col-md-6">
+              <div className="single_widget_area mb-30">
+                <ul className="footer_widget_menu">
+                  <li><Link to="/">Order Status</Link></li>
+                  <li><Link to="/">Payment Options</Link></li>
+                  <li><Link to="/">Shipping and Delivery</Link></li>
+                  <li><Link to="/">Guides</Link></li>
+                  <li><Link to="/">Privacy Policy</Link></li>
+                  <li><Link to="/">Terms of Use</Link></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="footer_nav_container">
-                <div className="cr">©2021 All Rights Reserverd. <Link to='/'>Miler</Link></div>
-              </div>
-            </div>
+
+          <div className="footer_social d-flex flex-row justify-content-center">
+            <ul>
+              <li><Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
+              <li><Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
+              <li><Link to="/"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
+              <li><Link to="/"><i className="fa fa-skype" aria-hidden="true"></i></Link></li>
+              <li><Link to="/"><i className="fa fa-pinterest" aria-hidden="true"></i></Link></li>
+            </ul>
           </div>
+
+          <div className="col-md-12 text-center">
+            <p>
+              Copyright &copy;2021 All rights reserved to Miler
+            </p>
+          </div>
+
         </div>
       </footer>
     </div>
   )
 };
 
-export default Home;
+export default Home

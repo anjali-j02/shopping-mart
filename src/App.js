@@ -6,7 +6,7 @@ import NavBar from './components/navbar/nav-bar'
 const App = () => {
   return (
     <BrowserRouter>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes />
     </BrowserRouter>
   )
