@@ -1,53 +1,23 @@
-import React from 'react'
-import NavBar from '../../components/navbar/nav-bar'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import NavBar from 'components/nav-bar/nav-bar';
 
 const Home = () => {
   return (
     <div id="app">
 
-      <header className="header_area">
-        <div className="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">'
-        <NavBar />
-
-          <div className="header-meta d-flex clearfix justify-content-end">
-
-            <div className="search-area">
-              <form action="#" method="post">
-                <input type="search" name="search" id="headerSearch" placeholder="Type for search" />
-                <button type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
-              </form>
-            </div>
-
-            <div className="favourite-area">
-              <Link to="/"><img src="assets/img/core-img/heart.svg" alt="" /></Link>
-            </div>
-
-            <div className="user-login-info">
-              <Link to="/"><img src="assets/img/core-img/user.svg" alt="" /></Link>
-            </div>
-
-            <div className="cart-area">
-              <Link to="/" id="essenceCartBtn"><img src="assets/img/core-img/bag.svg" alt="" /> <span>3</span></Link>
-            </div>
-          </div>
-
-        </div>
-      </header>
+      <NavBar Link={Link} />
 
       <div className="cart-bg-overlay"></div>
 
       <div className="right-side-cart-area">
-
 
         <div className="cart-button">
           <Link to="/" id="rightSideCart"><img src="assets/img/core-img/bag.svg" alt="" /> <span>3</span></Link>
         </div>
 
         <div className="cart-content d-flex">
-
           <div className="cart-list">
-
             <div className="single-cart-item">
               <Link to="/" className="product-image">
                 <img src="assets/img/product-img/product-1.jpg" className="cart-thumb" alt="" />
@@ -62,7 +32,6 @@ const Home = () => {
                 </div>
               </Link>
             </div>
-
 
             <div className="single-cart-item">
               <Link to="/" className="product-image">
@@ -96,7 +65,6 @@ const Home = () => {
           </div>
 
           <div className="cart-amount-summary">
-
             <h2>Summary</h2>
             <ul className="summary-table">
               <li><span>subtotal:</span> <span>₹2,199.00</span></li>
@@ -162,6 +130,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          
           <div className="row align-items-center">
             <div className="col text-center">
               <div className="new_arrivals_sorting">
@@ -174,6 +143,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="row">
             <div className="col">
               <div className="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
@@ -595,9 +565,7 @@ const Home = () => {
                     </Link>
                     <p className="product-price">₹799.00</p>
 
-
                     <div className="hover-content">
-
                       <div className="add-to-cart-btn">
                         <Link to="/" className="btn essence-btn">Add to Cart</Link>
                       </div>
@@ -613,11 +581,9 @@ const Home = () => {
 
                     <img className="hover-img" src="assets/img/product-img/product-4.jpg" alt="" />
 
-
                     <div className="product-badge offer-badge">
                       <span>-30%</span>
                     </div>
-
 
                     <div className="product-favourite">
                       <Link to="/" className="favme fa fa-heart"></Link>
@@ -631,9 +597,7 @@ const Home = () => {
                     </Link>
                     <p className="product-price"><span className="old-price">₹699.00</span> ₹599.00</p>
 
-
                     <div className="hover-content">
-
                       <div className="add-to-cart-btn">
                         <Link to="/" className="btn essence-btn">Add to Cart</Link>
                       </div>
@@ -641,19 +605,15 @@ const Home = () => {
                   </div>
                 </div>
 
-
                 <div className="single-product-wrapper">
-
                   <div className="product-img">
                     <img src="assets/img/product-img/product-4.jpg" alt="" />
 
                     <img className="hover-img" src="assets/img/product-img/product-5.jpg" alt="" />
 
-
                     <div className="product-badge new-badge">
                       <span>New</span>
                     </div>
-
 
                     <div className="product-favourite">
                       <Link to="/" className="favme fa fa-heart"></Link>
@@ -667,9 +627,7 @@ const Home = () => {
                     </Link>
                     <p className="product-price">₹1499.00</p>
 
-
                     <div className="hover-content">
-
                       <div className="add-to-cart-btn">
                         <Link to="/" className="btn essence-btn">Add to Cart</Link>
                       </div>
@@ -712,7 +670,6 @@ const Home = () => {
       <footer className="footer_area clearfix">
         <div className="container">
           <div className="row">
-
             <div className="col-12 col-md-6">
               <div className="single_widget_area d-flex mb-30">
 
@@ -724,10 +681,8 @@ const Home = () => {
                     <li><Link to="/">Cart</Link></li>
                     <li><Link to="/">About</Link></li>
                     <li><Link to="/">Contact</Link></li>
-                    <li><Link to="/">Sew Your Tee</Link></li>
                   </ul>
                 </div>
-
               </div>
             </div>
 
@@ -760,7 +715,6 @@ const Home = () => {
               Copyright &copy;2021 All rights reserved to Miler
             </p>
           </div>
-
         </div>
       </footer>
     </div>
