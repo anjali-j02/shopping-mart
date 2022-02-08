@@ -32,7 +32,6 @@ class Http {
     async get(url, id) {
         const method = 'GET'
         if (id) {
-            // Fetch Single Record...
             url = `${url}/${id}`
         }
         const response = await this.request(url, method)
@@ -54,7 +53,6 @@ class Http {
     async delete(url, id) {
         const method = 'DELETE'
         if (id) {
-            // Fetch Single Record...
             url = `${url}/${id}`
         }
         const response = await this.request(url, method)
