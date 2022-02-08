@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const headers = {
     'Accept': 'application/json',
     'Content-type': 'application/json'
@@ -9,7 +11,7 @@ const joinURL = (baseURL, url) => {
 
 class Service {
     constructor() {
-        this.domain = '/api/v1'
+        this.domain = 'http://dummy.restapiexample.com/api/v1'
     }
 
     request(url, method = 'POST', data = null) {
@@ -24,7 +26,7 @@ class Service {
             options.body = JSON.stringify({ ...data })
         }
 
-        return fetch(url, options)
+        return axios(url, options)
     }
 
     async get(url, id) {
@@ -34,19 +36,19 @@ class Service {
             url = `${url}/${id}`
         }
         const response = await this.request(url, method)
-        return await response.json()
+        return await response?.data
     }
 
     async post(url, data) {
         const method = 'POST'
         const response = await this.request(url, method)
-        return await response.json()
+        return await response?.data
     }
 
     async put(url, data) {
         const method = 'PUT'
         const response = await this.request(url, method)
-        return await response.json()
+        return await response?.data
     }
 
     async delete(url, id) {
@@ -56,7 +58,7 @@ class Service {
             url = `${url}/${id}`
         }
         const response = await this.request(url, method)
-        return await response.json()
+        return await response?.data
     }
 
 }

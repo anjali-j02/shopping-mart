@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Http from 'services/http/http'
 import Footer from 'components/footer/footer'
 import NavBar from 'components/nav-bar/nav-bar'
 import AddToCart from 'components/add-to-cart/add-to-cart'
@@ -12,6 +13,12 @@ import DashboardCategory from 'components/dashboard/dashboard-category'
 import DashboardPopularProducts from 'components/dashboard/popular-products'
 
 const Home = () => {
+  const http = new Http()
+
+  React.useEffect(() => {
+    http.get('employees').then((response) => console.log('GET REQ', response))
+  }, [http])
+
   return (
     <div id="app">
       <NavBar Link={Link} />
