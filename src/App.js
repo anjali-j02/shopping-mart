@@ -1,12 +1,10 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Routes from './routes'
-// import NavBar from './components/navbar/nav-bar'
+import Routes from 'routes'
 
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <NavBar /> */}
       <Routes />
     </BrowserRouter>
   )
