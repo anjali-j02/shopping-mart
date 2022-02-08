@@ -9,7 +9,7 @@ const joinURL = (baseURL, url) => {
     return `${baseURL}/${url}`
 }
 
-class Service {
+class Http {
     constructor() {
         this.domain = process.env.REACT_APP_BASE_URL
     }
@@ -63,4 +63,4 @@ class Service {
 
 }
 
-export default Service
+export default Http
