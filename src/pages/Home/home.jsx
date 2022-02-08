@@ -17,7 +17,7 @@ const Home = () => {
 
   React.useEffect(() => {
     http.get('employees').then((response) => console.log(response))
-  }, [http])
+  })
 
   return (
     <div id="app">
