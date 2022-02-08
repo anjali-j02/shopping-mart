@@ -11,7 +11,7 @@ const joinURL = (baseURL, url) => {
 
 class Service {
     constructor() {
-        this.domain = 'http://dummy.restapiexample.com/api/v1'
+        this.domain = process.env.REACT_APP_BASE_URL
     }
 
     request(url, method = 'POST', data = null) {
