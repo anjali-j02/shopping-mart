@@ -1,17 +1,18 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from 'pages/Home/home'
-import AboutUs from 'pages/AboutUs/about-us'
-import PageNotFound from 'pages/PageNotFound/page-not-found'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import { HomePage, LoginPage, PageNotFoundPage } from 'Pages';
+import { Cart } from 'Components';
 
 const browerRoutes = () => {
-    return (
-        <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<AboutUs />} />
-            <Route path='*' element={<PageNotFound />} />
-        </Routes>
-    )
-}
+  return (
+    <Routes>
+      <Route path={'/'} element={<HomePage />} />
+      <Route path={'/login'} element={<LoginPage />} />
+      <Route path={'/cart'} element={<Cart />} />
+      <Route path={'*'} element={<PageNotFoundPage />} />
+    </Routes>
+  );
+};
 
-export default browerRoutes
+export default browerRoutes;

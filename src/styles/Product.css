@@ -1,0 +1,48 @@
+.product__titleOne {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 7.5px;
+}
+
+.product__titleTwo {
+    font-size: 13px;
+    font-weight: 400;
+    color: dimgrey;
+    margin-left: 15px;
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    margin-right: 7.5px;
+}
+
+.product__titleThree {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product__price {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 7.5px;
+    justify-content: space-evenly;
+}
+
+.product__titleFour {
+    font-size: 11px;
+    font-weight: 300;
+    color: dimgrey;
+    text-decoration: line-through;
+}
+
+.product__titleFive {
+    font-size: 11px;
+    font-weight: 500;
+    color: coral;
+}
+
+.product__rating {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}

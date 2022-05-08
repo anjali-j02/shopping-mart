@@ -1,18 +1,26 @@
-export const storeStorage= async (key, value) => {
+export const storeStorage = async (key, value) => {
   try {
-    localStorage.setItem(`@${key}`, value)
+    localStorage.setItem(`@${key}`, value);
   } catch (e) {
-    return e
+    return e;
   }
-}
+};
 
 export const getStorage = async (key) => {
   try {
-    const value = localStorage.getItem(`@${key}`)
+    const value = localStorage.getItem(`@${key}`);
     if (value) {
-      return value
+      return value;
     }
   } catch (e) {
-    return e
+    return e;
   }
-}
+};
+
+export const removeStorage = async (key, value) => {
+  try {
+    localStorage.removeItem(`@${key}`, value);
+  } catch (e) {
+    return e;
+  }
+};

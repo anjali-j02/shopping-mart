@@ -1,9 +1,13 @@
-import React, { StrictMode } from 'react'
-import ReactDOM from 'react-dom'
-import App from 'App'
-import reportWebVitals from 'reportWebVitals'
-import { Provider } from 'react-redux'
-import store from 'redux/store'
+import React, { StrictMode } from 'react';
+
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+
+import App from 'App';
+import reportWebVitals from 'reportWebVitals';
+import store from 'Redux/Store';
+
+import './Styles/index.css';
 
 ReactDOM.render(
   <StrictMode>
@@ -11,7 +15,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById('root'),
+);
 
-reportWebVitals()
+reportWebVitals();
